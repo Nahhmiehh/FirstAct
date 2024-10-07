@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './registration.css';
 
 function RegistrationForm () {
   return (
     <div className="d-flex justify-content-center align-items-center vw-100">
-      <form classNgitame="border p-4 rounded" style={{ width: '400px', backgroundColor: '#f8f9fa' }}>
+      <form className="registration-container border p-4 rounded" style={{ width: '400px'}}>
         <h2 className="text-center mb-4">Register</h2>
 
         <div className="form-group mb-3">
@@ -27,7 +28,7 @@ function RegistrationForm () {
           <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm your password" />
         </div>
 
-        <button type="submit" className="btn btn-primary w-100">Register</button>
+        <button type="submit" className="btn btn-custom w-100">Register</button>
       </form>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './login.css';
 
 function LoginForm () {
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
-      <form className="border p-4 rounded" style={{ width: '400px', backgroundColor: '#f8f9fa' }}>
+    <div className="d-flex justify-content-center align-items-center vw-100">
+      <form className="login-container border p-4 rounded" style={{ width: '400px'}}>
         <h2 className="text-center mb-4">Login</h2>
 
         <div className="form-group mb-3">
@@ -17,10 +18,10 @@ function LoginForm () {
           <input type="password" className="form-control" id="password" placeholder="Password" required />
         </div>
 
-        <button type="submit" className="btn btn-primary w-100">Login</button>
+        <button type="submit" className="btn btn-custom w-100">Login</button>
 
         <p className="text-center mt-3">
-          Don't have an account? <a href="/register">Register here</a>
+          Don't have an account? <a href="/register" className="text-Link">Register here</a>
         </p>
       </form>
     </div>
